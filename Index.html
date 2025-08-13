@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video-by-Code</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Video-by-Code</h1>
+    <div class="row">
+      <input type="text" id="codeInput" placeholder="Nhập mã" autocomplete="off" />
+      <button id="showBtn">Hiện video</button>
+    </div>
+    <div id="msg"></div>
+    <div class="video-player" id="videoWrap"></div>
+  </div>
+
+  <button id="adminToggleBtn" title="Mở / đóng admin panel">Admin</button>
+  <div id="adminPanel">
+    <h3>Admin Panel</h3>
+    <form id="adminForm" onsubmit="return false;">
+      <input type="text" id="adminCode" placeholder="Mã" autocomplete="off" />
+      <input type="text" id="adminLink" placeholder="Link video" autocomplete="off" />
+      <button id="saveBtn">Lưu</button>
+    </form>
+    <div id="adminMsg"></div>
+    <div id="listWrap"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
